@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>HTML Lists</title>
+        <style>
+            ul ul ul .abc{
+                color: red;
+            }
+
+            p span:first-child{
+                color: red;
+            }
+
+            p span:nth-child(5){
+                color: red;
+            }
+
+            h2{
+                color: red;
+            }
+
+            h2:hover{
+                color: blue;
+                cursor: pointer;
+            }
+
+            a:link{
+                color: green;
+            }
+
+            a:active{
+                color: orange;
+            }
+
+            a:visited{
+                color: red;
+            }
+
+            ul li:first-child ul li:first-child ul li:last-child{
+                color: red;
+            }
+        </style>
+    </head>
+    <body>
+
+        <a href="#h2-nested">Go to Nested Lists</a>
+
+        <h2>Ordered List</h2>
+        <ol>
+            <li>First</li>
+            <li>Second</li>
+            <li>Third</li>
+            <li>Fourth</li>
+        </ol>
+
+        <h2>Unordered List</h2>
+        <ul>
+            <li>First</li>
+            <li>Second</li>
+            <li>Third</li>
+            <li>Fourth</li>
+        </ul>
+
+        <h2>Definition List</h2>
+        <dl>
+            <dt>CMJD</dt>
+            <dd>Comprehensive Master Java Developer</dd>
+            <dd>Duration: 6 Months</dd>
+            <dd>Location: Galle</dd>
+            
+            <dt>ABSD</dt>
+            <dd>Advanced Business Solution Developer</dd>
+            <dd>Duration: 6 Months</dd>
+            <dd>Location: Panadura, Galle</dd>
+        </dl>
+        
+        <h2 id="h2-nested">Nested Lists</h2>
+        <ul>
+            <li>About Us</li>
+            <li>Home</li>
+            <li>Products
+                <ul>
+                    <li class="abc">OS
+                        <ul>
+                            <li>Windows
+                                <ul>
+                                    <li class="abc">Windows 7</li>
+                                    <li>Windows 8</li>
+                                    <li>Windows 10</li>
+                                </ul>
+                            </li>
+                            <li>Linux
+                                <ul>
+                                    <li>Deepin</li>
+                                    <li>Mint</li>
+                                    <li>Kali</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="abc">Office
+                        <ul>
+                            <li>Microsoft
+                                <ul>
+                                    <li class="abc">Office 2010</li>
+                                    <li>Office 2013</li>
+                                </ul>
+                            </li>
+                            <li>Open Source
+                                <ul>
+                                    <li>OpenOffice</li>
+                                    <li>Libre Office</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+
+        <p>
+            <span>a</span><br>
+            <span>b</span><br>
+            <span>c</span><br>
+            <span>d</span><br>
+        </p>
+
+        
+    </body>
+</html>
